@@ -1,0 +1,36 @@
+.navbar {
+    position: absolute;
+    right: 10px;
+}
+
+.nav-list {
+    list-style-type: none;
+    font-size: 30px;
+    color: white;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: grey;
+  color: white;
+  text-align: center;
+}
+
+.img {
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container {
+    display: inline-block;
+    margin-top: 200px;
+}
+
+.img-button {
+    text-align: center;
+    margin: 20px;
+}
