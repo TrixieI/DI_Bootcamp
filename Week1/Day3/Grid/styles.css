@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+#page {
+    margin: 0 10px 0 10px;
+    display: grid;
+    height: 100rem;
+    width: 80%;
+    grid-gap: 6px;
+    grid-template-areas: 
+    "header header header"
+    "hero main main"
+    "hero main main"
+    "sidebar main main"
+    "sidebar extra extra"
+    "images images posts"
+    "footer footer footer";
+
+}
+
+.header{
+    grid-area: header;
+    background-image: url(https://cdn.pixabay.com/photo/2016/05/27/08/51/mobile-phone-1419275_1280.jpg);
+    color: white;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    grid-area: hero;
+    background-color: rgb(189, 100, 192);
+}
+
+.main {
+    grid-area: main;
+    background-color: rgb(252, 185, 0);
+    color: white;
+    font-size: 25px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: rgb(50, 165, 75);
+}
+
+.extra {
+    grid-area: extra;
+    background-color: rgb(123, 129, 129);
+}
+
+.posts {
+    grid-area: posts;
+    background-color: rgb(236, 118, 191);
+}
+
+.images {
+    grid-area: images;
+    background-color: rgb(0, 255, 21);
+}
+
+.footer {
+    grid-area: footer;
+    background-color: rgb(255, 102, 0);
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        grid-template-areas: 
+        "header";
+    }
+}

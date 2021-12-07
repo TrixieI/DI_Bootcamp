@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    border: 5px solid black;
+    height: 20vh;
+    flex-direction: row;
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.cell1 {
+    display: flex;
+    width: 20%;
+    background-color: blue;
+    height: 50%;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.cell2 {
+    display: flex;
+    width: 100%;
+    background-color: rgb(15, 173, 221);   
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.cell3 {
+    display: flex;
+    width: 100%;
+    background-color: red;
+    height: 50%;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+}
