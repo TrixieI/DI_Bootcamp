@@ -1,6 +1,7 @@
 .navbar {
     position: absolute;
     right: 10px;
+    background-color: grey;
 }
 
 .nav-list {
@@ -23,6 +24,17 @@
     width: 200px;
     height: 200px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: .5 ease;
+    -webkit-transition: .5 ease;
+    -moz-transition: .5 ease;
+    -ms-transition: .5 ease;
+    -o-transition: .5 ease;
+    background-color: grey;
+}
+
+.img:hover {
+    opacity: 0.3;
+    background-color: grey;
 }
 
 .container {
@@ -33,4 +45,25 @@
 .img-button {
     text-align: center;
     margin: 20px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .navbar {
+        text-align: center;
+    }
+    
+    .img {
+        max-width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .img-button {
+        max-width: 100%;
+        height: auto;
+    }
 }

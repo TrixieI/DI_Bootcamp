@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* NAV */
+
+.navbar {
+    background-color: #444;
+
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+li {
+    padding: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.push {
+    margin-left: auto;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: rgb(0, 153, 255);
+    border-radius: 0.50rem;
+    -webkit-border-radius: 0.50rem;
+    -moz-border-radius: 0.50rem;
+    -ms-border-radius: 0.50rem;
+    -o-border-radius: 0.50rem;
+    margin: 2px;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://s3.amazonaws.com/virginia.webrand.com/virginia/1754/XGrmmd4aFRQ/2597f8ca107f5ef336455a2606bd5296.jpg?1591958129");
+    color: white;
+    height: 70vh;
+    background-size: 100;
+    background-repeat: round;
+}
+
+/* GRID */
+
+.main {
+    background-image: url(/Website-layout/images/background.jpeg);
+    color: white;
+    background-size: cover;
+}
+
+
+.grid-wrapper {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.main2 {
+    background-color: #444;
+    color: white;
+}
+
+
+.grid-wrapper2 {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr))
+}
+
+.box > img {
+    width: 80%;
+    height: 80%;
+    border-radius: 0.50rem;
+    -webkit-border-radius: 0.50rem;
+    -moz-border-radius: 0.50rem;
+    -ms-border-radius: 0.50rem;
+    -o-border-radius: 0.50rem;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+
+.box > img:hover {
+    cursor: pointer;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.50), 0 15px 12px rgba(0,0,0,0.52);
+}
+
+
+.box {
+    
+    padding: 30px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 0.50rem;
+    -webkit-border-radius: 0.50rem;
+    -moz-border-radius: 0.50rem;
+    -ms-border-radius: 0.50rem;
+    -o-border-radius: 0.50rem;
+}
+
+/*FOOTER*/
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    opacity: 0.6;
+    filter:Alpha(opacity=60); /* IE8 and earlier */
+    color: white;
+}
+
+.hr1 {
+    border: 1px solid blue;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-list {
+        font-size: 1em;
+        margin: 0;
+        background-color: rgb(13, 223, 118);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+    .header > img {
+        display: flex;
+        height: 50vh;
+    }
+
+    li {
+        padding: 20px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+    .push {
+        margin-left: auto;
+    }
+
+    .container {
+        background-image: none;
+        background-color: rgb(16, 196, 106);
+    }
+
+    .grid-wrapper {
+        background-color: #444;
+    }
+}
+
+
