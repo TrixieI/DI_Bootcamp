@@ -132,7 +132,7 @@ typeof(1 != 2)
 
 "Java" + "Script"
 // Prediction: "JavaScript" because the two strings are combined
-// Actual:
+// Actual: 'JavaScript
 
 " " + " "
 // Prediction: "  " we get two empty spaces inside the string
