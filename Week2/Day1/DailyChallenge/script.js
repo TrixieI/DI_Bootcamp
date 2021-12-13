@@ -6,7 +6,7 @@ fruits.sort() // Sorts in Alphabetical order
 fruits.push("Kiwi") // Adds "Kiwi" to the end of the Array
 fruits.shift() // Removes Apples from the Array because its the first element
 fruits.reverse() // Reverses the Array
-console.log(fruits);
+console.log(fruits); // Displays the array
 
 //Exercise 2
 let moreFruits = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
