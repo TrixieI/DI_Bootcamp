@@ -123,17 +123,17 @@ function hotelCost() {
 function planeRideCost() {
 
 let city = prompt("Enter city: ")
+let cityCost;
     while (city === 'false' || typeof city!=='string') {
         city = prompt("Enter city: ")
     }
     if(city == 'London'){
-        city = 183
+        cityCost = 183
     } else if(city == 'Paris'){
-        city = 220
+        cityCost = 220
     } else {
-        city = 300
+        cityCost = 300
     }
-    let cityCost = city
     return cityCost
 } 
 
@@ -153,11 +153,12 @@ function rentalCarCost() {
             return carCost;
             
         }
+
 }
 
-let finalPrice = hotelCost() + planeRideCost() + rentalCarCost()
 
 function totalVacationCost() {
+    let finalPrice = hotelCost() + planeRideCost() + rentalCarCost()
     console.log(`The hotel cost is ${hotelCost()}$, the plane tickets
 cost is ${planeRideCost()}$ and the car rental cost is ${rentalCarCost()}$
 The final price is ${finalPrice}$ for the whole trip!`)
