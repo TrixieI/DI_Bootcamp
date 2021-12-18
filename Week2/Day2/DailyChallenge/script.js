@@ -1,4 +1,4 @@
-let sentence = "The movie is not bad";
+let sentence = "The movie is not that bad";
 let array = sentence.split(" ");
 const wordNot = array.indexOf("not")
 const wordBad = array.indexOf("bad")

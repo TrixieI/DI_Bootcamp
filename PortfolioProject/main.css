@@ -9,6 +9,17 @@ html,h1,h2,h3,h4,h5,h6,a{
     padding: 0;
 }
 
+#reveal {
+    display: none;
+}
+
+#reveal img {
+    width: 32px;
+    height: 32px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 .overlay h1 {
     padding: 2rem;
 }
@@ -81,19 +92,22 @@ html {
     -o-transition: background 700ms linear;
 }
 
+#di {
+    width: 50%;
+}
+
     .bg-img{
-    height: 70vh;
+    height: 100vh;
     width: 100%;
     text-align: center;
     padding-bottom: 100px;
     color: white;
     overflow: hidden;
     background: #C04848;  /* fallback for old browsers */
-    background: linear-gradient(rgb(72,0,72,0.8), rgb(192,72,72,0.8)), url("/DI_Bootcamp/PortfolioProject/images/cover.jpeg");  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(rgb(72,0,72,0.8), rgb(192,72,72,0.8)), url("images/cover.jpeg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(rgb(72,0,72,0.8), rgb(192,72,72,0.8)), url("/DI_Bootcamp/PortfolioProject/images/cover2.jpeg");  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(rgb(72,0,72,0.8), rgb(192,72,72,0.8)), url("images/cover2.jpeg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center;
     }
 
@@ -141,14 +155,15 @@ html {
     transform: skew(-10deg);
 }
 
-    body {
-        background-color: rgb(127, 182, 255);
-    }
 
     .overlay {
         margin: 10px 50px 20px 50px;
         text-align: center;
         font-size: 1.5rem;
+    }
+
+    .overlay p, h3 {
+        padding-top: 50px;
     }
 
     .container2 {
@@ -165,6 +180,17 @@ html {
         background-color: #444;
         text-align: center;
         color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+        padding-top: 5px;
+        
+    }
+
+    .footer img {
+        width: 32px;
+        height: 32px;
     }
 
     @media only screen and (max-width: 768px) {        
@@ -258,3 +284,4 @@ html {
 @media screen and (min-width: 501px){
     #mnav{ display: none; }   /* hide it on larger screens */
   }
+

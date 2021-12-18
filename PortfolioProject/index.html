@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
     <link rel="stylesheet" href="main.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +18,7 @@
         <ul class="nav-list">
             <li><a class="a" href="index.html">Home</a></li>
             <li><a class="a" href="#projects">Projects</a></li>
-            <li><a class="a" href="#">About</a></li>
+            <li><a class="a" href="#about">About</a></li>
             <li><a class="a push" href="contact.html">Contact</a></li>
         </ul>
     </nav>
@@ -21,35 +27,53 @@
                 <ul class="nav-list">
                     <li><a class="a" href="index.html">Home</a></li>
                     <li><a class="a" href="#projects">Projects</a></li>
-                    <li><a class="a" href="#">About</a></li>
+                    <li><a class="a" href="#about">About</a></li>
                     <li><a class="a push" href="contact.html">Contact</a></li>
                 </ul>
             </nav>
             <div class="overlay">
-                <h1>Hello</h1>
-                <p>My name is <span><a href="https://github.com/TrixieI" target="_blank">Fima Treiger</a></span> and i'm a Full Stack Web Developer<br>
-                You can check out my <span><a href="#projects">Projects</a></span> below or take a look at my <span>About</span> page to learn more about me</p>
+                <h1 class="m1">Hello</h1>
+                <h3 class="m2">and welcome to my portfolio website</h3>
+
+
+                <div id="reveal">
+                    <a href="https://github.com/TrixieI" target="_blank"><img class="m4" src="images/github.svg"></a>
+                    <a href="https://twitter.com/FimaTreiger" target="_blank"><img class="m4" src="images/twitter.svg"></a>
+                    <a href="https://www.linkedin.com/in/fima-treiger-708853227/" target="_blank"><img class="m4" src="images/linkedin.svg"></a></div>
+
+                <p class="m3">My name is <span onclick="sMedia()">Fima Treiger</span> and i'm a Full Stack Web Developer<br>
+                You can check out my <span><a href="#projects">Projects</a></span> below or take a look below to read <span><a href="#about">About</a></span> me</p>
         </div>
     </header>
     <section class="container1" id="projects">
         <h1>Projects Placeholders</h1>
         <div class="grid">
-            <div class="box"><img src="https://icons-for-free.com/iconfiles/png/512/install+javascript+js+node+npm+tools+icon-1320165731324625592.png"></div>
-            <div class="box"><img src="https://icon-library.com/images/javascript-icon-png/javascript-icon-png-23.jpg"></div>
-            <div class="box"><img src="https://icon-library.com/images/react-icon/react-icon-29.jpg"></div>
+            <div class="box"><img src="https://icons-for-free.com/iconfiles/png/512/js+library+long+shadow+nodejs+web+icon-1320184850167478047.png"></div>
+            <div class="box"><img src="https://www.freepnglogos.com/uploads/javascript-png/javascript-vector-logo-yellow-png-transparent-javascript-vector-12.png"></div>
+            <div class="box"><img src="https://cdn.auth0.com/blog/optimizing-react/logo.png"></div>
         </div>
         <div class="grid">
             <div class="box"><img src="https://icons-for-free.com/iconfiles/png/512/icon++html+icon-1320194800994962643.png"></div>
             <div class="box"><img src="https://icon-library.com/images/css-icon-png/css-icon-png-0.jpg"></div>
             <div class="box"><img src="https://cdn1.iconfinder.com/data/icons/programming-15/100/ProgrammingC_AJAX-512.png"></div>
         </div>
-        <article class="container2">
-            <p>I'm still a student at Developers.Institute so a lot of things are still just place holders<br>
+        <article class="container2" id=about>
+            <h1>Hello there!</h1>
+            <p>as I already mentioned, my name is Fima Treiger, I used to be an HVAC technician<br>
+            in <b>2021</b> I decided to switch careers and join a Web Development Bootcamp<br>
+            I'm currently a student at Developers.Institute so a lot of things are still just place holders<br>
             over time as I learn more and improve my skills I will add new things to this website<br>
+            <img id="di" src="https://developers.institute/wp-content/uploads/2019/03/LOGO-DI.png">
             <br>
-            Thank you for visiting, you can use the contact link above if you wish to get in touch!</p>
+            Thank you for visiting, you can use the contact link at the top if you wish to get in touch!<br>
+            or check me out on social media below!</p>
         </article>
     </section>
-    <footer class="footer">Copyright@2021 Fima Treiger</footer>
+    <footer class="footer">
+        <a href="https://github.com/TrixieI" target="_blank"><img src="images/github.svg"></a>
+        <a href="https://twitter.com/FimaTreiger" target="_blank"><img src="images/twitter.svg"></a>
+        <a href="https://www.linkedin.com/in/fima-treiger-708853227/" target="_blank"><img src="images/linkedin.svg"></a>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
