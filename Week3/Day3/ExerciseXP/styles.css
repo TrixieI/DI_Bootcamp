@@ -1,0 +1,31 @@
+body {
+  background-color: orange;
+}
+
+.fill {
+  background-image: url("http://source.unsplash.com/random/250x250");
+  position: relative;
+  height: 250px;
+  width: 250px;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
+}
+
+.empty {
+  display: inline-block;
+  height: 260px;
+  width: 260px;
+  margin: 10px;
+  border: 5px red solid;
+  background-color: white;
+}
+
+.hold {
+  border: 4px green solid;
+}
+
+.hovered {
+  background: white;
+  border-style: dashed;
+}
