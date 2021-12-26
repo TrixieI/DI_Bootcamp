@@ -1,17 +1,24 @@
-ScrollReveal().reveal('.grid' , {delay: 300 , reset: true});
+ScrollReveal().reveal(".grid", { delay: 300, reset: true });
 
-ScrollReveal().reveal('.container2' , {delay: 300 , reset: true});
+ScrollReveal().reveal(".container2", { delay: 300, reset: true });
 
-ScrollReveal().reveal('.m1' , {delay: 400 , reset: false});
-ScrollReveal().reveal('.m2' , {delay: 1200 , reset: false});
-ScrollReveal().reveal('.m3' , {delay: 1600 , reset: false});
-
+ScrollReveal().reveal(".m1", { delay: 400, reset: false });
+ScrollReveal().reveal(".m2", { delay: 1200, reset: false });
+ScrollReveal().reveal(".m3", { delay: 1600, reset: false });
 
 function sMedia() {
-    const show = document.getElementById("reveal");
-    if (!show.style.display || show.style.display === "none") {
-      show.style.display = "block";
-    } else {
-      show.style.display = "none";
-    }
+  const show = document.getElementById("reveal");
+  if (!show.style.display || show.style.display === "none") {
+    show.style.display = "block";
+  } else {
+    show.style.display = "none";
   }
+}
+
+let submit = document.getElementById("submit");
+submit.addEventListener("click", click);
+
+function click(e) {
+  e.preventDefault();
+  alert("Sorry, but this doesn't work yet!");
+}
