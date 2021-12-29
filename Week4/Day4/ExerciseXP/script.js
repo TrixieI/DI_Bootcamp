@@ -113,14 +113,20 @@ class Animal {
   }
 }
 class Mamal extends Animal {
-  constructor(name, type, color) {
+  constructor(name, type, color, sound) {
     super(name, type, color);
-    this.sound = function sound(voice) {
-      voice = `Moooo I'm ${name} the ${type} that's ${color}`;
+    this.animalSound = sound;
+    this.sound = function (voice) {
+      console.log(
+        `${this.animalSound} I'm ${this.animalName} the ${this.animalType} that's ${this.animalColor}`
+      );
       return voice;
     };
   }
 }
 
-let cow = new Mamal("Milly", "cow", "white with black spots");
-console.log(cow.sound());
+let cow = new Mamal("Milly", "cow", "white with black spots", "Mooooo!!!");
+cow.sound();
+
+let tiger = new Mamal("Jack", "tiger", "golden", "Roooaarr!!!");
+tiger.sound();
