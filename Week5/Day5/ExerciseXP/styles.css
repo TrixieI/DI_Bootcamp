@@ -1,0 +1,10 @@
+#loading {
+  display: none;
+}
+
+body {
+  background-image: url(https://tvmoviefix-6009.kxcdn.com/wp-content/uploads/2019/05/star-wars-850x491.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
