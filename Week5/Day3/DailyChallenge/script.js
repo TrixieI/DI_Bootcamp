@@ -86,34 +86,56 @@ let morse = `{
     ")": "-.--.-"
   }`;
 
-function toJS() {
+let ask = prompt("Give word");
+let arr = [];
+
+function toJS(morse) {
   return new Promise((resolve, reject) => {
-    let jsObject = JSON.parse(morse); // Gives us a Javascript Object from the JSON object
-    if (jsObject.length < 0) {
+    let jsmorse = JSON.parse(morse); // Gives us a Javascript Object from the JSON object
+    if (morse.length < 0) {
       reject("Error, object is empty!");
     } else {
-      resolve(jsObject);
+      resolve(jsmorse);
     }
   });
 }
 
-function toMorse(jsObject) {
+function toMorse(jsmorse) {
   return new Promise((resolve, reject) => {
-    let ask = prompt("Give word or sentence");
-    if (jsObject.hasOwnProperty(ask)) {
-      resolve(ask);
-    } else {
-      reject("Try again");
+    for (let i = 0; i < ask.length; i++) {
+      let morseNew = jsmorse[ask[i]];
+      if (jsmorse == undefined) {
+        reject("Something went wrong!");
+      } else {
+        console.log(arr.push(morseNew)); // displays the morse code
+        resolve(morseNew);
+      }
     }
   });
 }
 
-function joinWords() {
-  console.log("\n");
+function joinWords(morseNew) {
+  return new Promise((resolve, reject) => {
+    console.log(arr);
+    for (let i = 0; i < morseNew.length; i++) {
+      if (morseNew) {
+        let result = arr.join("\n"); // displays ....,.,.-..,.-..,--- instead of hello with breaks
+        resolve(result);
+      } else {
+        reject(result);
+      }
+    }
+  });
 }
 
-toJS()
-  .then((jsObject) => console.log(jsObject))
+toJS(morse)
   .then(toMorse)
   .then(joinWords)
-  .then((result) => console.log(result));
+  .then((result) => console.log(result))
+  .catch((error) => console.log(error));
+// gives us the result of "hello"
+// ....
+// .
+// .-..
+// .-..
+// ---
