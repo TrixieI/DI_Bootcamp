@@ -20,21 +20,22 @@ async function exercise() {
     loading.style.fontSize = "60px";
     loading.innerText = `Loading...`;
     let response = await fetch(
-      `https://swapi.dev/api/people/${Math.floor(Math.random() * 60)}`
+      `https://www.swapi.tech/api/people/${Math.floor(Math.random() * 60)}`
     );
     if (response.status == 200) {
       loading.style.display = "none";
       let jsData = await response.json();
       let cont = document.getElementById("container");
-      let name = jsData.name;
-      let height = jsData.height;
-      let hairColor = jsData.hair_color;
-      let gender = jsData.gender;
-      let birth = jsData.birth_year;
-      let grab = jsData.homeworld;
+      let name = jsData.result.properties.name;
+      let height = jsData.result.properties.height;
+      let hairColor = jsData.result.properties.hair_color;
+      let gender = jsData.result.properties.gender;
+      let birth = jsData.result.properties.birth_year;
+      let grab = jsData.result.properties.homeworld;
       let newgrab = await fetch(grab);
       let data = await newgrab.json();
-      let world = data.name;
+      let world = data.result.properties.name;
+      console.log(data);
       cont.style.textAlign = "center";
       cont.style.fontSize = "30px";
       cont.innerText = `${name} \n Height: ${height} \n Hair color: ${hairColor} \n Gender: ${gender} \n Birth year: ${birth} \n Homeworld: ${world}`;

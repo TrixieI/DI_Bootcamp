@@ -1,6 +1,7 @@
 // First Daily Challenge
 let arrayOfWords = ["tomato", "airplane", "dog", "bike"];
 let complicatedArray = ["hello", "asphalt", 3, true];
+let array = [];
 
 function makeAllCaps(array) {
   let exercise1 = new Promise((resolve, reject) => {
@@ -104,10 +105,10 @@ function toMorse(jsmorse) {
   return new Promise((resolve, reject) => {
     for (let i = 0; i < ask.length; i++) {
       let morseNew = jsmorse[ask[i]];
-      if (jsmorse == undefined) {
+      if (morseNew == undefined) {
         reject("Something went wrong!");
       } else {
-        console.log(arr.push(morseNew)); // displays the morse code
+        arr.push(morseNew); // displays the morse code
         resolve(morseNew);
       }
     }

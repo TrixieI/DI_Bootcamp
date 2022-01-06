@@ -1,11 +1,11 @@
-// Exercise Game - The word game
-// You need to create 4 functions, each of them return a promises
-// 1. The 1st function, receives 2 famous persons name from the user - if the names are not a string -> reject
-// 2. The 2nd function, receives a noun - if the noun is less than 3 letters - reject
-// 3. The 3rd function, receives a city - if the city doesn't start with an uppercase letter -> reject
-// 4. The 4st function, receives a verb (finishing with "ing") - if it doesn't end with "ing" -> reject
-// 5. The last function, is an async function - it receives all the above promises, and return a sentence with it
-// Ex: "Beyonce is playing football with Barack Obama in Paris"
+// // Exercise Game - The word game
+// // You need to create 4 functions, each of them return a promises
+// // 1. The 1st function, receives 2 famous persons name from the user - if the names are not a string -> reject
+// // 2. The 2nd function, receives a noun - if the noun is less than 3 letters - reject
+// // 3. The 3rd function, receives a city - if the city doesn't start with an uppercase letter -> reject
+// // 4. The 4st function, receives a verb (finishing with "ing") - if it doesn't end with "ing" -> reject
+// // 5. The last function, is an async function - it receives all the above promises, and return a sentence with it
+// // Ex: "Beyonce is playing football with Barack Obama in Paris"
 
 // async function famous(name1, name2) {
 //   if (typeof name1 && typeof name2 === "string") {
