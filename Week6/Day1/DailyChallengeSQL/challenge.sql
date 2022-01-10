@@ -1,30 +1,20 @@
--- CREATE TABLE actors(
---  actor_id SERIAL PRIMARY KEY,
---  first_name VARCHAR (50) NOT NULL,
---  last_name VARCHAR (100) NOT NULL,
---  age DATE NOT NULL,
---  number_oscars SMALLINT NOT NULL
--- )
+-- SELECT * FROM cityinfo
 
--- INSERT INTO actors (first_name, last_name, age, number_oscars)
--- VALUES
--- ('Matt','Damon','08/10/1977', 5),
--- ('George','Clooney','08/10/1977', 2),
--- ('Jessica','Loren','08/10/1977', 5),
--- ('Linsey','Lohen','08/10/1977', 2),
--- ('Frank','Bohe','08/10/1977', 1),
--- ('Jonathan','Croney','08/10/1977', 0),
--- ('William','Smith','08/10/1977', 3),
+-- SELECT temperature FROM cityinfo WHERE city LIKE 'Boston' AND event_datetime = '03-01-2015'
 
--- I have 7 actors in total
+-- SELECT EXTRACT(DAY FROM event_datetime), EXTRACT(HOUR FROM event_datetime) FROM cityinfo WHERE city='San Francisco' AND temperature > 28 AND temperature < 30
 
--- INSERT INTO actors (first_name, last_name, age, number_oscars)
--- VALUES('Luke')
+-- SELECT city, event_datetime, sound FROM cityinfo ORDER BY sound DESC LIMIT 1;
 
--- ERROR:  INSERT has more target columns than expressions
--- LINE 21: INSERT INTO actors (first_name, last_name, age, number_oscar...
---                                          ^
--- SQL state: 42601
--- Character: 613
+-- SELECT city, event_datetime, sound FROM cityinfo ORDER BY sound ASC LIMIT 1;
 
--- We cannot leave blank fields because we set the constraints to NOT NULL, meaning we can't have blank fields
+-- SELECT dust FROM cityinfo WHERE city = 'San Francisco' AND EXTRACT(HOUR FROM event_datetime) > 20;
+
+-- SELECT event_datetime FROM cityinfo WHERE city = 'Geneva' AND (humidity < 40 OR humidity > 60);
+
+-- SELECT EXTRACT(DOW FROM event_datetime) AS Dayofweek,  city FROM cityinfo ORDER BY light DESC LIMIT 1;
+
+-- SELECT DISTINCT city FROM cityinfo WHERE city ILIKE 's%'
+
+-- INSERT INTO cityinfo(event_datetime,city,temperature,light,airquality_raw,sound,humidity,dust)
+-- VALUES(NOW(), 'Tel-aviv', 30, 4 ,7 ,8,3,5) RETURNING *;
