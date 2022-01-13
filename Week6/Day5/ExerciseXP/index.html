@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
+</head>
+<body>
+    <form action="tasks.html" id="form">
+        <h1>TASK CREATOR:</h1>
+        <input type="text" id="taskname" name="name" placeholder="task name..."><br><br>
+        <input type="textbox" id="desc" name="desc" placeholder="task description..."><br><br>
+        <label for="startdate">Enter task start date</label>
+        <input id="startdate" type="datetime-local" name="startdate" value="2022-01-01T08:30"><br><br>
+        <label for="startdate">Enter task end date</label>
+        <input id="enddate" type="datetime-local" name="enddate" value="2022-01-01T09:30"><br><br>
+        <input id="submit" type="submit" value="Add Task">
+        <button><a href="tasks.html">Check tasks</a></button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
