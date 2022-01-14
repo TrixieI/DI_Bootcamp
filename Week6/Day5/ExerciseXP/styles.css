@@ -1,4 +1,7 @@
-/* Dropdown Button */
+#form {
+  text-align: center;
+}
+
 .dropbtn {
   background-color: red;
   color: white;
@@ -6,10 +9,11 @@
   font-size: 16px;
   border: none;
   cursor: pointer;
-  border: 1px solid black;
+  border: 3px solid rgb(43, 108, 176);
   margin: 10px;
   width: 250px;
   justify-content: center;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 /* Dropdown button on hover & focus */
@@ -22,4 +26,49 @@
 
 .show {
   display: block;
+}
+
+#taskname,
+#desc {
+  width: 300px;
+  border: 3px solid rgb(43, 108, 176);
+  outline: 0;
+  color: rgb(60, 66, 87);
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px,
+    rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(60 66 87 / 16%) 0px 0px 0px 1px,
+    rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px,
+    rgb(0 0 0 / 0%) 0px 0px 0px 0px;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  padding: 4px 8px;
+  min-height: 28px;
+  vertical-align: middle;
+  transition: background-color 0.24s, box-shadow 0.24s;
+  transition-property: background-color, box-shadow;
+  transition-duration: 0.24s, 0.24s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0s, 0s;
+}
+
+.btn {
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(43, 108, 176);
+  border: 1px solid rgb(66, 153, 225);
+  line-height: 26px;
+}
+
+#startdate,
+#enddate {
+  border: 2px solid rgb(43, 108, 176);
 }
