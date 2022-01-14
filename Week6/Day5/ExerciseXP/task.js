@@ -1,6 +1,10 @@
 (function get() {
   // Grabs the local storage JSON string and parse it into a javascript object we can use
   let data = JSON.parse(localStorage.getItem("task"));
+  // Sort the parsed localstorage array of objects by start date
+  data.sort(function (a, b) {
+    return new Date(a.startdate) - new Date(b.startdate);
+  });
   console.log(data);
   for (let i = 0; i < data.length; i++) {
     let results = document.getElementById("results");
@@ -52,7 +56,6 @@
     taskbtn.append(x);
     taskbtn.append(checkbox);
     results.append(taskbtn);
-    console.log(data);
     function clear(e) {
       if (confirm("You're about to delete this task, are you certain?")) {
         taskbtn.remove();
@@ -61,13 +64,18 @@
     // Turns the task green if the checkbox is checked, if not, keeps it red or turns it back to red
     function checked() {
       if (checkbox.checked) {
-        // SETS TASK COMPLETE TO TRUE ON CHECK
+        // SETS TASK COMPLETE TO TRUE ON CHECK, CHANGES TO GREEN AND APPENDS TO COMPLETED TASKS PAGE
         data[i].isComplete = true;
         taskbtn.style.backgroundColor = "green";
         console.log(data);
-      } else {
+        let completed = document.querySelector(".completed");
+        completed.append(taskbtn);
+        // SETS TASK COMPLETE TO FALSE ON UNTICK
+      } else if (checkbox.checked == false) {
         taskbtn.style.backgroundColor = "red";
         data[i].isComplete = false;
+        let id = document.getElementById("results");
+        id.append(taskbtn);
       }
     }
     function display() {
