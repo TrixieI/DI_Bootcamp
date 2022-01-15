@@ -1,5 +1,19 @@
+body {
+  background-image: url(https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1748&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #form {
   text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(43, 108, 176);
 }
 
 .dropbtn {

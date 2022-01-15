@@ -2,7 +2,7 @@
   // Grabs the local storage JSON string and parse it into a javascript object we can use
   let data = JSON.parse(localStorage.getItem("task"));
   // Sort the parsed localstorage array of objects by start date
-  data.sort(function (a, b) {
+  data.sort((a, b) => {
     return new Date(a.startdate) - new Date(b.startdate);
   });
   console.log(data);
