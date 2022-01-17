@@ -9,7 +9,7 @@ function colorflipper() {
   btn.innerText = "CHANGE COLOR!";
   div.append(btn);
   body.append(div);
-  function click(e) {
+  function click() {
     let randomColor = Math.floor(Math.random() * 16777215).toString(16); // Thanks google
     h1.innerText = `The color code for this color is: ${randomColor}`;
     div.append(h1);

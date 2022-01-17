@@ -16,6 +16,10 @@ let jaws = new Video("Jaws", "Andrew", "1 hour and 20 minutes");
 
 jaws.watch();
 
-let konosuba = new Video("Konosuba", "Fima", "24 Episodes");
+let spiderman = new Video(
+  "Spiderman: Home Coming",
+  "David",
+  "1 hour and 30 minutes"
+);
 
-konosuba.watch();
+spiderman.watch();

@@ -1,0 +1,10 @@
+.ocean {
+  background-color: aqua;
+}
+
+.banner {
+  text-align: center;
+  font-size: 100px;
+  display: block;
+  border: 5px solid red;
+}
