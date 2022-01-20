@@ -1,0 +1,16 @@
+[
+  {
+    "fname": "sadasd",
+    "lname": "sadasd",
+    "email": "sdasd@wasd.com",
+    "username": "pewpew",
+    "password": "pewpewpew"
+  },
+  {
+    "fname": "sadasd",
+    "lname": "sadasd",
+    "email": "sdasd@wasd.com",
+    "username": "hello",
+    "password": "goodbye"
+  }
+]
