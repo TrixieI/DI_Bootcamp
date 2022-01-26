@@ -3,38 +3,29 @@ import exp2 from "../exp2.json";
 
 export default class Example3 extends Component {
   render() {
-    const data = exp2;
-    let arrayOne = data.Experiences[0];
-    let arrayTwo = data.Experiences[1];
-    console.log(arrayOne);
-    console.log(arrayTwo);
+    const data = exp2.Experiences;
+    console.log(data);
     return (
       <div>
-        <img src={arrayOne.logo} alt="logo"></img>
-        <br></br>
-        <a href={arrayOne.url}>{arrayOne.companyName}</a>
-        <br></br>
-        <p>
-          <b>{arrayOne.roles[0].title}</b>
-        </p>
-        <p>
-          {arrayOne.roles[0].startDate}
-          {arrayOne.roles[0].location}
-        </p>
-        <p>{arrayTwo.roles[0].description}</p>
-        <br></br>
-        <img src={arrayTwo.logo} alt="logo"></img>
-        <br></br>
-        <a href={arrayTwo.url}>{arrayTwo.companyName}</a>
-        <br></br>
-        <p>
-          <b>{arrayTwo.roles[0].title}</b>
-        </p>
-        <p>
-          {arrayTwo.roles[0].startDate}
-          {arrayTwo.roles[0].location}
-        </p>
-        <p>{arrayTwo.roles[0].description}</p>
+        {data.map((item) => {
+          return (
+            <div>
+              <img src={item.logo} alt="Company Logo"></img>
+              <div>{item.companyName}</div>
+              {item.roles.map((item) => {
+                return (
+                  <div>
+                    <p>{item.title}</p>
+                    <p>
+                      {item.startDate}, {item.location}
+                    </p>
+                    <p>{item.description}</p>
+                  </div>
+                );
+              })}
+            </div>
+          );
+        })}
       </div>
     );
   }

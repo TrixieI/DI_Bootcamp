@@ -44,7 +44,7 @@ const jsonData = {
 })();
 
 const handleData = () => {
-  fetch("https://webhook.site/1991c35a-8ac9-4598-bfc1-038a89b5b723", {
+  fetch("http://localhost:3001/api/world", {
     // Enter your IP address here
 
     method: "POST",
