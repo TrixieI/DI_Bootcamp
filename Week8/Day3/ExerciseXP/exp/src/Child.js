@@ -6,6 +6,10 @@ class Child extends React.Component {
     this.state = {};
   }
 
+  componentWillUnmount() {
+    alert("Component will unmount!");
+  }
+
   render() {
     let hi;
     if (this.props.pew === true) {

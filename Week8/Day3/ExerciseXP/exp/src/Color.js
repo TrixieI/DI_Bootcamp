@@ -9,9 +9,6 @@ class Color extends React.Component {
       show: true,
     };
   }
-  componentWillUnmount() {
-    alert("Component will unmount!");
-  }
 
   btn = () => {
     this.setState({ favoriteColor: "pink" });
@@ -38,7 +35,7 @@ class Color extends React.Component {
   }
 
   del = () => {
-    this.setState({ show: false });
+    this.setState({ show: !this.state.show });
   };
 
   render() {
@@ -49,7 +46,7 @@ class Color extends React.Component {
         <div id="current">My Favorite color is: </div>
         <div id="previous">Previous color: </div>
         <div id="new">New color: {this.state.favoriteColor}</div>
-        <Child pew={this.state.show} />
+        {this.state.show ? <Child pew={this.state.show} /> : null}
         <button onClick={this.del}>Delete Header</button>
       </div>
     );
