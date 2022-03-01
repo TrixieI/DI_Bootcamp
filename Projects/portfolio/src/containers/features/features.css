@@ -3,6 +3,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  align-items: center;
 }
 
 .port__features-heading {
@@ -39,7 +40,11 @@
   flex-direction: column;
 }
 
-@media screen and (max-witdh: 990px) {
+.port__features-container a:hover {
+  color: var(--color-subtext);
+}
+
+@media screen and (max-width: 990px) {
   .port__features {
     flex-direction: column;
   }
@@ -47,10 +52,16 @@
   .port__features-heading {
     margin: 0 0 2rem 0;
   }
+
+  .port__features-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
-@media screen and (max-witdh: 550px) {
+@media screen and (max-width: 550px) {
   .port__features-heading h1 {
-    font-size: 28px;
-    line-height: 38px;
+    font-size: 20px;
+    line-height: 24px;
   }
 }

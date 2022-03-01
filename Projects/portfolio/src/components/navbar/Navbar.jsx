@@ -15,11 +15,9 @@ function Navbar() {
         <p><a href="#contact">Contact</a></p>
       </div>
       <div className="port__navbar-sign">
-        <button type="button">
-        <a className="button" href="../../assets/CV/FimaTreigerCV.pdf" download = "FimaTreigerCV.pdf">
-          Get CV
-          </a>
-        </button>
+      <a className="button" href="resume/FimaTreigerCV.pdf" download = "FimaTreigerCV.pdf">
+        <button type="button">Get CV</button>
+        </a>
       </div>
      </div>
      <div className="port__navbar-menu">
@@ -36,11 +34,9 @@ function Navbar() {
         <p><a href="#contact">Contact</a></p>
           </div>
           <div className="port__navbar-menu_container-links-sign">
-        <button type="button">
-        <a className="button" href="../../assets/CV/FimaTreigerCV.pdf" download = "FimaTreigerCV.pdf">
-          Get CV
-          </a>
-        </button>
+          <a className="button" href="resume/FimaTreigerCV.pdf" download>
+        <button type="button">Get CV</button>
+        </a>
       </div>
         </div>
       )}

@@ -1,0 +1,34 @@
+.footer_contact {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  color: #fff;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: capitalize;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18;
+  background: #ff4820;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+input {
+  height: 35px;
+}

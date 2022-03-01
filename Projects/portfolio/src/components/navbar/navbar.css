@@ -55,6 +55,11 @@
   cursor: pointer;
 }
 
+.port__navbar-sign:hover {
+  box-shadow: 0 19px 38px rgba(189, 183, 183, 0.3),
+    0 15px 12px rgba(218, 216, 216, 0.22);
+}
+
 .port__navbar-menu {
   margin-left: 1rem;
   display: none;
@@ -88,6 +93,10 @@
 
 .port__navbar-menu_container p {
   margin: 1rem 0;
+}
+
+.port__navbar-links_container a:hover {
+  color: var(--color-text);
 }
 
 .port__navbar-menu_container-links-sign {

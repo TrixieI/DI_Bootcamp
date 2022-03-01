@@ -91,6 +91,10 @@
   margin-top: 2rem;
 }
 
+a:hover {
+  color: var(--color-subtext);
+}
+
 @media screen and (max-width: 850px) {
   .gpt3__whatgpt3-heading {
     flex-direction: column;
